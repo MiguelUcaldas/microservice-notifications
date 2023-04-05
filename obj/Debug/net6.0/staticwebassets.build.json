@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "t69xStTZ3+s2laiv7vA6+qeitIgxaxWZEYmHX9KJNPo=",
+  "Source": "ms-notifications",
+  "BasePath": "_content/ms-notifications",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
