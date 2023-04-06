@@ -1,0 +1,35 @@
+using SendGrid;
+using SendGrid.Helpers.Mail;
+using System;
+using System.Threading.Tasks;
+
+class Program
+{
+    static async Task Main()
+    {
+        // Inicializa la API de SendGrid con tu clave API
+        var apiKey = "TU_CLAVE_API";
+        var client = new SendGridClient(apiKey);
+
+        // Crea un mensaje de correo electrónico
+        var from = new EmailAddress("from@example.com", "Nombre remitente");
+        var to = new EmailAddress("to@example.com", "Nombre destinatario");
+        var subject = "Asunto del correo";
+        var plainTextContent = "Contenido de texto sin formato";
+        var htmlContent = "<p>Contenido en formato HTML</p>";
+        var msg = MailHelper.CreateSingleEmail(from, to, subject, plainTextContent, htmlContent);
+
+        try
+        {
+            // Envía el correo electrónico
+            var response = await client.SendEmailAsync(msg);
+            Console.WriteLine(response.StatusCode);
+            Console.WriteLine(response.Headers);
+            Console.WriteLine(response.Body.ReadAsStringAsync().Result);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
+}
