@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ANGEL\\proyect-real-state\\backend\\ms-notifications\\ms-notifications.csproj": {}
+    "C:\\Users\\SRG98\\Desktop\\UNIVERSIDAD\\2023-1\\PROGRAMACION3\\proyecto\\microservice-notifications\\microservice-notifications\\ms-notifications.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ANGEL\\proyect-real-state\\backend\\ms-notifications\\ms-notifications.csproj": {
+    "C:\\Users\\SRG98\\Desktop\\UNIVERSIDAD\\2023-1\\PROGRAMACION3\\proyecto\\microservice-notifications\\microservice-notifications\\ms-notifications.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ANGEL\\proyect-real-state\\backend\\ms-notifications\\ms-notifications.csproj",
+        "projectUniqueName": "C:\\Users\\SRG98\\Desktop\\UNIVERSIDAD\\2023-1\\PROGRAMACION3\\proyecto\\microservice-notifications\\microservice-notifications\\ms-notifications.csproj",
         "projectName": "ms-notifications",
-        "projectPath": "C:\\Users\\ANGEL\\proyect-real-state\\backend\\ms-notifications\\ms-notifications.csproj",
-        "packagesPath": "C:\\Users\\ANGEL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ANGEL\\proyect-real-state\\backend\\ms-notifications\\obj\\",
+        "projectPath": "C:\\Users\\SRG98\\Desktop\\UNIVERSIDAD\\2023-1\\PROGRAMACION3\\proyecto\\microservice-notifications\\microservice-notifications\\ms-notifications.csproj",
+        "packagesPath": "C:\\Users\\SRG98\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SRG98\\Desktop\\UNIVERSIDAD\\2023-1\\PROGRAMACION3\\proyecto\\microservice-notifications\\microservice-notifications\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ANGEL\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\SRG98\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "DotNetEnv": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
             "SendGrid": {
               "target": "Package",
               "version": "[9.28.1, )"
