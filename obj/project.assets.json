@@ -2,6 +2,35 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "AWSSDK.Core/3.7.106.5": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "AWSSDK.SimpleNotificationService/3.7.101.34": {
+        "type": "package",
+        "dependencies": {
+          "AWSSDK.Core": "[3.7.106.5, 4.0.0)"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "DotNetEnv/2.5.0": {
         "type": "package",
         "dependencies": {
@@ -1525,6 +1554,58 @@
     }
   },
   "libraries": {
+    "AWSSDK.Core/3.7.106.5": {
+      "sha512": "Ko+ZIM9HVtisWy6v+sNDmTGfSsMgQT2KxtYHLa3ztpEiN7ta9BiuBmgiNAc1BPSu3xMs4NsBBdt+qMrMKfUB/A==",
+      "type": "package",
+      "path": "awssdk.core/3.7.106.5",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "awssdk.core.3.7.106.5.nupkg.sha512",
+        "awssdk.core.nuspec",
+        "lib/net35/AWSSDK.Core.dll",
+        "lib/net35/AWSSDK.Core.pdb",
+        "lib/net35/AWSSDK.Core.xml",
+        "lib/net45/AWSSDK.Core.dll",
+        "lib/net45/AWSSDK.Core.pdb",
+        "lib/net45/AWSSDK.Core.xml",
+        "lib/netcoreapp3.1/AWSSDK.Core.dll",
+        "lib/netcoreapp3.1/AWSSDK.Core.pdb",
+        "lib/netcoreapp3.1/AWSSDK.Core.xml",
+        "lib/netstandard2.0/AWSSDK.Core.dll",
+        "lib/netstandard2.0/AWSSDK.Core.pdb",
+        "lib/netstandard2.0/AWSSDK.Core.xml",
+        "tools/account-management.ps1"
+      ]
+    },
+    "AWSSDK.SimpleNotificationService/3.7.101.34": {
+      "sha512": "vNovQwj+KXUU8rspyZzbs9pl8BIuQbtIxSMyVzTpUEl5SN1VO3wp6bBFDfDCoaqWAx+W9NQnaTsw9Gem0B4CYw==",
+      "type": "package",
+      "path": "awssdk.simplenotificationservice/3.7.101.34",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/AWSSDK.SimpleNotificationService.CodeAnalysis.dll",
+        "awssdk.simplenotificationservice.3.7.101.34.nupkg.sha512",
+        "awssdk.simplenotificationservice.nuspec",
+        "lib/net35/AWSSDK.SimpleNotificationService.dll",
+        "lib/net35/AWSSDK.SimpleNotificationService.pdb",
+        "lib/net35/AWSSDK.SimpleNotificationService.xml",
+        "lib/net45/AWSSDK.SimpleNotificationService.dll",
+        "lib/net45/AWSSDK.SimpleNotificationService.pdb",
+        "lib/net45/AWSSDK.SimpleNotificationService.xml",
+        "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll",
+        "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.pdb",
+        "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.xml",
+        "lib/netstandard2.0/AWSSDK.SimpleNotificationService.dll",
+        "lib/netstandard2.0/AWSSDK.SimpleNotificationService.pdb",
+        "lib/netstandard2.0/AWSSDK.SimpleNotificationService.xml",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
     "DotNetEnv/2.5.0": {
       "sha512": "BjRAEr3fBXo0+1rbC5Z1NTcYH2z+qnjROXKisR78VtL87UAlseelvg0N3aMAk5Bexuph13IKEmxVk5b9CrpdWw==",
       "type": "package",
@@ -5094,25 +5175,26 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AWSSDK.SimpleNotificationService >= 3.7.101.34",
       "DotNetEnv >= 2.5.0",
       "SendGrid >= 9.28.1",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SRG98\\.nuget\\packages\\": {}
+    "C:\\Users\\pibe7\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SRG98\\Desktop\\UNIVERSIDAD\\2023-1\\PROGRAMACION3\\proyecto\\microservice-notifications\\microservice-notifications\\ms-notifications.csproj",
+      "projectUniqueName": "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\microservice-notifications\\ms-notifications.csproj",
       "projectName": "ms-notifications",
-      "projectPath": "C:\\Users\\SRG98\\Desktop\\UNIVERSIDAD\\2023-1\\PROGRAMACION3\\proyecto\\microservice-notifications\\microservice-notifications\\ms-notifications.csproj",
-      "packagesPath": "C:\\Users\\SRG98\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SRG98\\Desktop\\UNIVERSIDAD\\2023-1\\PROGRAMACION3\\proyecto\\microservice-notifications\\microservice-notifications\\obj\\",
+      "projectPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\microservice-notifications\\ms-notifications.csproj",
+      "packagesPath": "C:\\Users\\pibe7\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\microservice-notifications\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\SRG98\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\pibe7\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -5136,6 +5218,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "AWSSDK.SimpleNotificationService": {
+            "target": "Package",
+            "version": "[3.7.101.34, )"
+          },
           "DotNetEnv": {
             "target": "Package",
             "version": "[2.5.0, )"
@@ -5168,7 +5254,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.407\\RuntimeIdentifierGraph.json"
       }
     }
   }

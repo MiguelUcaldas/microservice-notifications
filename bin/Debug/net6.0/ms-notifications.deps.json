@@ -8,12 +8,32 @@
     ".NETCoreApp,Version=v6.0": {
       "ms-notifications/1.0.0": {
         "dependencies": {
+          "AWSSDK.SimpleNotificationService": "3.7.101.34",
           "DotNetEnv": "2.5.0",
           "SendGrid": "9.28.1",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
           "ms-notifications.dll": {}
+        }
+      },
+      "AWSSDK.Core/3.7.106.5": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.106.5"
+          }
+        }
+      },
+      "AWSSDK.SimpleNotificationService/3.7.101.34": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.106.5"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SimpleNotificationService.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.101.34"
+          }
         }
       },
       "DotNetEnv/2.5.0": {
@@ -822,6 +842,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AWSSDK.Core/3.7.106.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Ko+ZIM9HVtisWy6v+sNDmTGfSsMgQT2KxtYHLa3ztpEiN7ta9BiuBmgiNAc1BPSu3xMs4NsBBdt+qMrMKfUB/A==",
+      "path": "awssdk.core/3.7.106.5",
+      "hashPath": "awssdk.core.3.7.106.5.nupkg.sha512"
+    },
+    "AWSSDK.SimpleNotificationService/3.7.101.34": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vNovQwj+KXUU8rspyZzbs9pl8BIuQbtIxSMyVzTpUEl5SN1VO3wp6bBFDfDCoaqWAx+W9NQnaTsw9Gem0B4CYw==",
+      "path": "awssdk.simplenotificationservice/3.7.101.34",
+      "hashPath": "awssdk.simplenotificationservice.3.7.101.34.nupkg.sha512"
     },
     "DotNetEnv/2.5.0": {
       "type": "package",

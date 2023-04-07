@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SRG98\\Desktop\\UNIVERSIDAD\\2023-1\\PROGRAMACION3\\proyecto\\microservice-notifications\\microservice-notifications\\ms-notifications.csproj": {}
+    "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\microservice-notifications\\ms-notifications.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SRG98\\Desktop\\UNIVERSIDAD\\2023-1\\PROGRAMACION3\\proyecto\\microservice-notifications\\microservice-notifications\\ms-notifications.csproj": {
+    "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\microservice-notifications\\ms-notifications.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SRG98\\Desktop\\UNIVERSIDAD\\2023-1\\PROGRAMACION3\\proyecto\\microservice-notifications\\microservice-notifications\\ms-notifications.csproj",
+        "projectUniqueName": "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\microservice-notifications\\ms-notifications.csproj",
         "projectName": "ms-notifications",
-        "projectPath": "C:\\Users\\SRG98\\Desktop\\UNIVERSIDAD\\2023-1\\PROGRAMACION3\\proyecto\\microservice-notifications\\microservice-notifications\\ms-notifications.csproj",
-        "packagesPath": "C:\\Users\\SRG98\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SRG98\\Desktop\\UNIVERSIDAD\\2023-1\\PROGRAMACION3\\proyecto\\microservice-notifications\\microservice-notifications\\obj\\",
+        "projectPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\microservice-notifications\\ms-notifications.csproj",
+        "packagesPath": "C:\\Users\\pibe7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\microservice-notifications\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SRG98\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\pibe7\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -38,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AWSSDK.SimpleNotificationService": {
+              "target": "Package",
+              "version": "[3.7.101.34, )"
+            },
             "DotNetEnv": {
               "target": "Package",
               "version": "[2.5.0, )"
@@ -70,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.407\\RuntimeIdentifierGraph.json"
         }
       }
     }

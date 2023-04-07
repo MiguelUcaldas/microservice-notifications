@@ -60,3 +60,37 @@ C:\Users\SRG98\Desktop\UNIVERSIDAD\2023-1\PROGRAMACION3\proyecto\microservice-no
 C:\Users\SRG98\Desktop\UNIVERSIDAD\2023-1\PROGRAMACION3\proyecto\microservice-notifications\microservice-notifications\obj\Debug\net6.0\ms-notifications.pdb
 C:\Users\SRG98\Desktop\UNIVERSIDAD\2023-1\PROGRAMACION3\proyecto\microservice-notifications\microservice-notifications\obj\Debug\net6.0\ms-notifications.genruntimeconfig.cache
 C:\Users\SRG98\Desktop\UNIVERSIDAD\2023-1\PROGRAMACION3\proyecto\microservice-notifications\microservice-notifications\obj\Debug\net6.0\ref\ms-notifications.dll
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\obj\Debug\net6.0\ms-notifications.csproj.AssemblyReference.cache
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\obj\Debug\net6.0\ms-notifications.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\obj\Debug\net6.0\ms-notifications.AssemblyInfoInputs.cache
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\obj\Debug\net6.0\ms-notifications.AssemblyInfo.cs
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\obj\Debug\net6.0\ms-notifications.csproj.CoreCompileInputs.cache
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\obj\Debug\net6.0\ms-notifications.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\obj\Debug\net6.0\ms-notifications.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\obj\Debug\net6.0\ms-notifications.dll
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\obj\Debug\net6.0\refint\ms-notifications.dll
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\obj\Debug\net6.0\ms-notifications.pdb
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\appsettings.json
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\ms-notifications.exe
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\ms-notifications.deps.json
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\ms-notifications.runtimeconfig.json
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\ms-notifications.dll
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\ms-notifications.pdb
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\AWSSDK.Core.dll
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\AWSSDK.SimpleNotificationService.dll
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\DotNetEnv.dll
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\SendGrid.dll
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\Sprache.dll
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\StarkbankEcdsa.dll
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\obj\Debug\net6.0\scopedcss\bundle\ms-notifications.styles.css
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\obj\Debug\net6.0\ms-notifications.csproj.CopyComplete
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\obj\Debug\net6.0\ms-notifications.genruntimeconfig.cache
+C:\Users\pibe7\Desktop\Juan\Universidad\Semestre IV\Prog 3\proyecto-ventas\microservice-notifications\obj\Debug\net6.0\ref\ms-notifications.dll
