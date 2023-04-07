@@ -14,68 +14,51 @@ public class NotificationsController : ControllerBase
 {
     [Route("correo-bienvenida")]
     [HttpPost]
-
-    public async Task<ActionResult> EnviarCorreoBienvenida(ModeloCorreo datos)
-    {
-
+    public async Task<ActionResult> EnviarCorreoBienvenida(ModeloCorreo datos){
         var apiKey = Environment.GetEnvironmentVariable("SENDGRID_API_KEY");
         var client = new SendGridClient(apiKey);
         SendGridMessage msg = this.CrearMensajeBase(datos);
-        var from = new EmailAddress(Environment.GetEnvironmentVariable("EMAIL_FROM"), Environment.GetEnvironmentVariable("NAME_FROM"));
-        msg.SetTemplateId(Environment.GetEnvironmentVariable("WELCOME_SENGRID_TEMPLATE_ID"));
-        msg.SetTemplateData(new
-        {
-            name = datos.correoDestino,
-            message = "Prueba de akinmuble"
+        msg.SetTemplateId(Environment.GetEnvironmentVariable("WELCOME_SENDGRID_TEMPLATE_ID"));
+        msg.SetTemplateData(new{
+            name=datos.nombreDestino,
+            message="Bienvenido a la comunidad de la inmobiliaria"
         });
         var response = await client.SendEmailAsync(msg);
-
-        if (response.StatusCode == System.Net.HttpStatusCode.Accepted)
-        {
-            return Ok("correo enviado mensaje a la direccion" + datos.correoDestino);
+        if(response.StatusCode == System.Net.HttpStatusCode.Accepted){
+            return Ok("Correo enviado a la dirección " + datos.correoDestino);
+        }else{
+            return BadRequest("Error enviando el mensaje a la dirección " + datos.correoDestino);
         }
-        else
-        {
-            return BadRequest("Error enviando mensaje a la direccion" + datos.correoDestino);
-        }
-
     }
 
     [Route("correo-recuperacion-clave")]
     [HttpPost]
-    public async Task<ActionResult> EnviarCorreoRecuperacionClave(ModeloCorreo datos)
-    {
+    public async Task<ActionResult> EnviarCorreoRecuperacionClave(ModeloCorreo datos){
         var apiKey = Environment.GetEnvironmentVariable("SENDGRID_API_KEY");
         var client = new SendGridClient(apiKey);
-
         SendGridMessage msg = this.CrearMensajeBase(datos);
-        msg.SetTemplateId(Environment.GetEnvironmentVariable("WELCOME_SENGRID_TEMPLATE_ID"));
-        msg.SetTemplateData(new
-        {
-            name = datos.correoDestino,
-            message = "Esta es su nueva clave"
+        msg.SetTemplateId(Environment.GetEnvironmentVariable("WELCOME_SENDGRID_TEMPLATE_ID"));
+        msg.SetTemplateData(new{
+            name=datos.nombreDestino,
+            message="Esta es su nueva clave... no la comparta."
         });
         var response = await client.SendEmailAsync(msg);
-
-        if (response.StatusCode == System.Net.HttpStatusCode.Accepted)
-        {
-            return Ok("correo enviado mensaje a la direccion" + datos.correoDestino);
-        }
-        else
-        {
-            return BadRequest("Error enviando mensaje a la direccion" + datos.correoDestino);
+        if(response.StatusCode == System.Net.HttpStatusCode.Accepted){
+            return Ok("Correo enviado a la dirección " + datos.correoDestino);
+        }else{
+            return BadRequest("Error enviando el mensaje a la dirección " + datos.correoDestino);
         }
     }
 
     
-    [Route("correo-correo-2fa")]
+    [Route("enviar-correo-2fa")]
     [HttpPost]
     public async Task<ActionResult> EnivarCorreo2fa(ModeloCorreo datos)
     {
         var apiKey = Environment.GetEnvironmentVariable("SENDGRID_API_KEY");
         var client = new SendGridClient(apiKey);
         SendGridMessage msg = this.CrearMensajeBase(datos);
-        msg.SetTemplateId(Environment.GetEnvironmentVariable("SENGRID_2FA_SENGRID_TEMPLATE_ID"));
+        msg.SetTemplateId(Environment.GetEnvironmentVariable("TwoFA_SENDGRID_TEMPLATE_ID"));
         msg.SetTemplateData(new
         {
             name = datos.correoDestino,
