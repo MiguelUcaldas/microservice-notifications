@@ -121,4 +121,37 @@ public class NotificationsController : ControllerBase
             return BadRequest("Error enviando el sms");
         }
     }
+
+    [Route("enviar-sms-2fa")]
+    [HttpPost]
+    public async Task<ActionResult> EnviarSMS2fa(ModeloSms datos)
+    {
+        var accessKey = Environment.GetEnvironmentVariable("ACCESS_KEY_AWS");
+        var secretKey = Environment.GetEnvironmentVariable("SECRET_KEY_AWS");
+        var client = new AmazonSimpleNotificationServiceClient(accessKey, secretKey, RegionEndpoint.USEast1);
+        var messageAttributes = new Dictionary<string, MessageAttributeValue>();
+        var smsType = new MessageAttributeValue
+        {
+            DataType = "String",
+            StringValue = "Transactional"
+        };
+
+        messageAttributes.Add("AWS.SNS.SMS.SMSType", smsType);
+
+        PublishRequest request = new PublishRequest
+        {
+            Message = datos.contenidoMensaje,
+            PhoneNumber = datos.numeroDestino,
+            MessageAttributes = messageAttributes
+        };
+        try
+        {
+            await client.PublishAsync(request);
+            return Ok("Mensaje enviado");
+        }
+        catch
+        {
+            return BadRequest("Error enviando el sms");
+        }
+    }
 }
