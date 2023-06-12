@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\microservice-notifications\\ms-notifications.csproj": {}
+    "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\backend\\microservice-notifications\\ms-notifications.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\microservice-notifications\\ms-notifications.csproj": {
+    "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\backend\\microservice-notifications\\ms-notifications.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\microservice-notifications\\ms-notifications.csproj",
+        "projectUniqueName": "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\backend\\microservice-notifications\\ms-notifications.csproj",
         "projectName": "ms-notifications",
-        "projectPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\microservice-notifications\\ms-notifications.csproj",
+        "projectPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\backend\\microservice-notifications\\ms-notifications.csproj",
         "packagesPath": "C:\\Users\\pibe7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\microservice-notifications\\obj\\",
+        "outputPath": "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\backend\\microservice-notifications\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pibe7\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.407\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
         }
       }
     }

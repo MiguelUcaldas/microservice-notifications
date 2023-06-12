@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "78fGar1G+6kphKOHNvhs7/EsTxYu1kM+7llWcOikPRTQPTyhSBleewtYi00LqVoBKflN8ZFgMQGfxSZcST91CA==",
+  "dgSpecHash": "l/W1+wymy2qEomkBqt8P0c+kqCbPQmuA02uCf+7BYALbTQzipOXg9Bhad3W9dtFZm//O+DpF6ZjJWpwYwkwipg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\microservice-notifications\\ms-notifications.csproj",
+  "projectFilePath": "C:\\Users\\pibe7\\Desktop\\Juan\\Universidad\\Semestre IV\\Prog 3\\proyecto-ventas\\backend\\microservice-notifications\\ms-notifications.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pibe7\\.nuget\\packages\\awssdk.core\\3.7.106.5\\awssdk.core.3.7.106.5.nupkg.sha512",
     "C:\\Users\\pibe7\\.nuget\\packages\\awssdk.simplenotificationservice\\3.7.101.34\\awssdk.simplenotificationservice.3.7.101.34.nupkg.sha512",

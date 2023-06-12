@@ -88,6 +88,17 @@ public class NotificationsController : ControllerBase
         return msg;
     }
 
+    private SendGridMessage CrearMensajeBaseContacto(ModeloContacto datos)
+    {   
+        var from = new EmailAddress(Environment.GetEnvironmentVariable("EMAIL_FROM"), Environment.GetEnvironmentVariable("NAME_FROM"));
+        var Subject = "Contacto Akinmueble";
+        var to = new EmailAddress(datos.correoDestino, datos.nombreDestino);
+        var plainTextContent = datos.contenidoCorreo;
+        var htmlContent = datos.asuntoCorreo;
+        var msg = MailHelper.CreateSingleEmail(from, to, Subject, plainTextContent, htmlContent);
+        return msg;
+    }
+
     //Envío de SMS
     [Route("enviar-sms")]
     [HttpPost]
@@ -153,5 +164,31 @@ public class NotificationsController : ControllerBase
         {
             return BadRequest("Error enviando el sms");
         }
+    }
+
+    [Route("enviar-correo-contact")]
+    [HttpPost]
+    public async Task<ActionResult> FormularioContacto(ModeloContacto datos)
+    {
+        var apiKey = Environment.GetEnvironmentVariable("SENDGRID_API_KEY");
+        var client = new SendGridClient(apiKey); // crear el cliente
+
+        SendGridMessage msg = this.CrearMensajeBaseContacto(datos); 
+        msg.SetTemplateId(Environment.GetEnvironmentVariable("CONTACT_FORM_SENDGRID_TEMPLATE_ID"));
+        msg.SetTemplateData(new{
+            nombreDestino = datos.nombreDestino,
+            nombre = datos.nombre,
+            celular = datos.celular,
+            correo = datos.correo,
+            titulo = datos.asuntoCorreo,
+            mensaje = datos.contenidoCorreo
+        });
+        var response = await client.SendEmailAsync(msg);
+        if(response.StatusCode == System.Net.HttpStatusCode.Accepted){
+            return Ok("Correo enviado a la dirección " + datos.correoDestino);
+        }else{
+            return BadRequest("Error enviando el mensaje a la dirección: " + datos.correoDestino);
+        }
+        
     }
 }
